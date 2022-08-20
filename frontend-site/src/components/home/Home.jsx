@@ -9,9 +9,7 @@ const Home = () => {
        <div className="col-2">kjdfkj</div>
         <div className="col-2">kjdfkj</div>
         <div className="col-2">kjdfkj</div>
-        <div className="col-2">kjdfkj</div>
-        <div className="col-2">kjdfkj</div>
-        <div className="col-2">kjdfkj</div>
+     
        </div>
     </div>
   )
