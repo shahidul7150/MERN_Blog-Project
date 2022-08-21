@@ -8,6 +8,7 @@ const Navbar = () => {
    <div id='navbar' className="navbar">
     <div className="container">
       <div className="row">
+          <input type="checkbox" name="" id="toggle"/>
         <div className="col-4">
           <div className="image-menubar">
             <Link className='image' to='/'>
@@ -17,7 +18,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="col-8">
-          <ul className="link-list">
+          <ul className="link-list toggle">
             <li className="link-item">
               <Link to='/about'>About</Link>
             </li>
@@ -27,6 +28,8 @@ const Navbar = () => {
             <li className="link-item">
               <Link to='/policy'>Policy</Link>
             </li>
+
+            <div className="social-icon">
             <li className="link-item">
               <Link to='/about'><span><FaFacebookSquare/></span></Link>
             </li>
@@ -42,6 +45,7 @@ const Navbar = () => {
             <li className="link-item">
               <Link to='/about'><span><ImLinkedin/></span></Link>
             </li>
+            </div>
           </ul>
         </div>
       </div>
