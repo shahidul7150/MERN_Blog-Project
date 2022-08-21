@@ -3,3 +3,45 @@
     margin: 0px auto;
     padding: 0px 3rem;
 }
+.from-group{
+    margin: 8px 0;
+}
+.form-control{
+    padding: 0px 5px;
+    width: 100%;
+    border: 1px solid var(--border_color);
+    outline: none;
+    height: 35px;
+    font-size: 15px;
+    transition: all .5s;
+    font-weight: 300;
+    color: var(--text_color);
+    background: var(--main_bg);
+    &::placeholder{
+        font-size: 15px;
+        font-weight: 300;
+        color: var(--text_color);
+    }
+    &:focus{
+        border: 1px solid;
+    }
+}
+.btn{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 8px;
+    font-size: 16px;
+    font-weight: 400;
+    border: transparent;
+    height: 33px;
+    border-radius: 2px;
+    cursor: pointer;
+    &:hover{
+        background-color: #191f33;
+    }
+}
+.btn-block{
+    width: 100%;
+}
