@@ -1,45 +1,134 @@
-.home{
+.home {
     background-color: var(--second_bg);
-    .main-content{
-        .container{
+
+    .main-content {
+        .container {
             padding-top: 25px;
             padding-bottom: 25px;
-            .row{
-                .col-8{
 
-                }
-                .col-4{
-                    .search-category-tag{
+            .row {
+                .col-8 {}
+
+                .col-4 {
+                    .search-category-tag {
                         margin-left: 10px;
-                        .search{
+
+                        .search {
                             padding: 15px 10px;
                             text-align: center;
                             background-color: var(--main_bg);
                             box-shadow: var(--shadow_color);
-                            h2{
+
+                            h2 {
                                 text-transform: uppercase;
                                 margin-bottom: 15px;
                             }
-                            .form-group{
-                                .form-control{
+
+                            .form-group {
+                                .form-control {
 
                                     padding: 5px;
                                 }
-                                
+
                             }
-                            .btn{
+
+                            .btn {
                                 background-color: #4ad848;
                                 text-transform: uppercase;
                                 text-align: center;
                                 font-weight: 400;
                                 transition: all .3s;
                                 color: #fff;
-                                &:hover{
+
+                                &:hover {
                                     background-color: #2ed223;
                                 }
                             }
                         }
+
+                        .popular_article {
+                            margin-top: 28px;
+                            background-color: var(--main_bg);
+                            box-shadow: var(--shadow_color);
+
+                            .title {
+                                padding: 10px;
+                                text-align: center;
+                                background: #ffeb3b;
+                                margin-bottom: 25px;
+
+                                h3 {
+                                    color: var(--text_color);
+                                    font-size: 14px;
+                                    text-transform: uppercase;
+                                    font-weight: 700;
+                                }
+                            }
+
+                            .row {
+                                padding: 0px 10px 10px 10px;
+                                margin: 22px 0;
+
+                                .col-4 {
+                                    a.image {
+                                        height: 70px;
+
+                                        img {
+                                            width: 100%;
+                                            object-fit: cover;
+                                        }
+                                    }
+                                }
+
+                                .col-8 {
+                                    .title-time {
+                                        padding: 0px 10px;
+
+                                        a {
+                                            color: var(--text_color);
+                                            font-size: 15px;
+                                            font-weight: 700;
+                                            transition: all 0.5s;
+
+                                            &:hover {
+                                                color: #009688;
+                                            }
+                                        }
+
+                                        span {
+                                            color: var(--text_color);
+                                            font-size: 12px;
+                                            text-transform: uppercase;
+                                            line-height: 1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .flow-facebook {
+                            .title {
+                                padding: 6px 5px;
+                                text-align: center;
+                                background: #6af008;
+                                margin-bottom: 10px;
+
+                                h3 {
+                                    color: var#404040;
+                                    font-size: 16px;
+                                    text-transform: uppercase;
+                                    font-weight: 700;
+                                }
+
+                            }
+
+                            .image {
+                                display: flex;
+                                justify-content: center;
+                            }
+                        }
                     }
+
                 }
             }
         }
