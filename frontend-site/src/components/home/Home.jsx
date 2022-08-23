@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaChevronRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import HomeArticle from './HomeArticle'
 import Navbar from './Navbar'
 import PopularArticle from './PopularArticle'
 
@@ -12,7 +13,7 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-8">
-              <h3>Article</h3>
+              <HomeArticle />
             </div>
 
             <div className="col-4">
@@ -63,7 +64,7 @@ const Home = () => {
                 </div>
                 <div className="tag">
                   <div className="title">
-                    <h3>Category</h3>
+                    <h3>Tag</h3>
                   </div>
                   <ul>
                     <li>
