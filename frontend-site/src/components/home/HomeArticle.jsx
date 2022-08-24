@@ -17,7 +17,7 @@ const HomeArticle = () => {
                     <div className="col-8">
                         <div className="home-article-details">
                             <div className="title">
-                                <Link to='/'>Big Boss meeting arranging this sunday</Link>
+                                <Link to='/article/details/shahid'>Big Boss meeting arranging this sunday</Link>
                             </div>
                             <div className="name-time">
                                 <span><Link to='/'>Shahidul Islam</Link></span>
@@ -28,7 +28,7 @@ const HomeArticle = () => {
                             </div>
                             <div className="read-more">
                                 <button className="read-more-btn">
-                                    <Link to='/'>Read more</Link>
+                                    <Link to='/article/details/shahid'>Read more</Link>
                                 </button>
                             </div>
                         </div>
@@ -113,7 +113,7 @@ const HomeArticle = () => {
                                 <Link to='/'>Big Boss meeting arranging this sunday</Link>
                             </div>
                             <div className="name-time">
-                                <span><Link to='/'>Shahidul Islam</Link></span>
+                                <span><Link to='/article/details/:shahid'>Shahidul Islam</Link></span>
                                 <span>23 Aug 2022</span>
                             </div>
                             <div className="article-text">
@@ -121,7 +121,7 @@ const HomeArticle = () => {
                             </div>
                             <div className="read-more">
                                 <button className="read-more-btn">
-                                    <Link to='/'>Read more</Link>
+                                    <Link to='/article/details/:shahid'>Read more</Link>
                                 </button>
                             </div>
                         </div>

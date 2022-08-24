@@ -1,11 +1,22 @@
-import React from 'react'
+
+import React, { useState } from 'react'
 import { FaChevronRight } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import { Link, Route, Switch } from 'react-router-dom'
+import ArticleDetails from './ArticleDetails'
+import CategoryArticle from './CategoryArticle'
 import HomeArticle from './HomeArticle'
 import Navbar from './Navbar'
 import PopularArticle from './PopularArticle'
+import TagArticle from './TagArticle'
 
-const Home = () => {
+
+const Home = ({ history }) => {
+  const [value, setValue] = useState('')
+  console.log(history)
+  const search = (e) => {
+    e.preventDefault();
+    history.push(`/article/search/${value}`)
+  }
   return (
     <div className="home">
       <Navbar />
@@ -13,7 +24,14 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-8">
-              <HomeArticle />
+              <Switch>
+                <Route path='/' component={HomeArticle} exact />
+                <Route path='/article/:currentPage?' component={HomeArticle} exact />
+                <Route path='/article/details/:slag' component={ArticleDetails} exact />
+                <Route path='/article/category/:categorySlug/:currentPage?' component={CategoryArticle} exact />
+                <Route path='/article/tag/:tagSlug/:currentPage?' component={TagArticle} exact />
+                <Route path='/article/search/:searchValue' component={HomeArticle} exact />
+              </Switch>
             </div>
 
             <div className="col-4">
@@ -21,10 +39,10 @@ const Home = () => {
                 <div className="search">
                   <h2>Search</h2>
                   <div className="form-group">
-                    <input type="text" className="form-control" placeholder='search' />
+                    <input onChange={(e) => setValue(e.target.value)} type="text" className="form-control" placeholder='search' />
                   </div>
                   <div className="from-group">
-                    <button className="btn btn-block">Search</button>
+                    <button onClick={search} className="btn btn-block">Search</button>
                   </div>
                 </div>
                 <div className="popular_article">
@@ -49,7 +67,7 @@ const Home = () => {
                   </div>
                   <ul className="cate-list">
                     <div className="cate-item">
-                      <li><FaChevronRight /><Link to='/'>Algorithom</Link></li>
+                      <li><FaChevronRight /><Link to='/article/category/algorithom'>Algorithom</Link></li>
                       <span>(5)</span>
                     </div>
                     <div className="cate-item">
@@ -68,7 +86,7 @@ const Home = () => {
                   </div>
                   <ul>
                     <li>
-                      <Link to='/'>Programming</Link>
+                      <Link to='/article/tag/programming'>Programming</Link>
                     </li>
                     <li>
                       <Link to='/'>Programming</Link>
@@ -86,6 +104,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+
     </div >
   )
 }
