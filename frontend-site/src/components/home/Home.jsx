@@ -4,6 +4,7 @@ import { FaChevronRight } from 'react-icons/fa'
 import { Link, Route, Switch } from 'react-router-dom'
 import ArticleDetails from './ArticleDetails'
 import CategoryArticle from './CategoryArticle'
+import Footer from './Footer'
 import HomeArticle from './HomeArticle'
 import Navbar from './Navbar'
 import PopularArticle from './PopularArticle'
@@ -104,7 +105,7 @@ const Home = ({ history }) => {
           </div>
         </div>
       </div>
-
+      <Footer />
 
     </div >
   )
