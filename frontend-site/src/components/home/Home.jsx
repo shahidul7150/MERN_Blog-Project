@@ -1,6 +1,6 @@
 
-import React, { useState } from 'react'
-import { FaChevronRight } from 'react-icons/fa'
+import React, { useRef, useState } from 'react'
+import { FaChevronRight, FaArrowUp } from 'react-icons/fa'
 import { Link, Route, Switch } from 'react-router-dom'
 import ArticleDetails from './ArticleDetails'
 import CategoryArticle from './CategoryArticle'
@@ -14,14 +14,19 @@ import TagArticle from './TagArticle'
 
 const Home = ({ history }) => {
   const [value, setValue] = useState('')
+  const nav = useRef()
   console.log(history)
   const search = (e) => {
     e.preventDefault();
     history.push(`/article/search/${value}`)
   }
+
+  const scrollTop = () => {
+    nav.current?.scrollIntoView({ behavior: 'smooth' })
+  }
   return (
     <div className="home">
-      <Navbar />
+      <Navbar nav={nav} />
       <div className="main-content">
         <div className="container">
           <div className="row">
@@ -108,6 +113,11 @@ const Home = ({ history }) => {
       </div>
       <Footer />
       <CreateAt />
+      <div id="scroll">
+        <button onClick={scrollTop} className="scroll-btn">
+          <FaArrowUp />
+        </button>
+      </div>
     </div >
   )
 }

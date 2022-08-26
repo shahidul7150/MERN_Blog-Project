@@ -210,4 +210,26 @@
             }
         }
     }
+
+    #scroll {
+        .scroll-btn {
+            width: 35px;
+            height: 35px;
+            background-color: #008009;
+            border: none;
+            position: fixed;
+            right: 2%;
+            top: 92%;
+            color: #fff;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 2px;
+
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
 }
