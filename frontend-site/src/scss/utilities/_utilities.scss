@@ -1,12 +1,14 @@
-.container{
+.container {
     width: 90%;
     margin: 0px auto;
     padding: 0px 3rem;
 }
-.from-group{
+
+.from-group {
     margin: 8px 0;
 }
-.form-control{
+
+.form-control {
     padding: 0px 5px;
     width: 100%;
     border: 1px solid var(--border_color);
@@ -17,17 +19,20 @@
     font-weight: 300;
     color: var(--text_color);
     background: var(--main_bg);
-    &::placeholder{
+
+    &::placeholder {
         font-size: 15px;
         font-weight: 300;
         color: var(--text_color);
     }
-    &:focus{
+
+    &:focus {
         border: 1px solid;
     }
 }
-.btn{
-   display: flex;
+
+.btn {
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -38,10 +43,17 @@
     height: 33px;
     border-radius: 2px;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         background-color: #191f33;
     }
 }
-.btn-block{
+
+.btn-block {
     width: 100%;
+}
+
+.card {
+    background-color: var(--main_bg);
+    padding: 10px 15px;
 }
