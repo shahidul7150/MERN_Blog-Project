@@ -4,14 +4,14 @@ import { FaFacebook, FaGoogle, FaLock, FaUser } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import Navbar from '../home/Navbar'
 
-const Login = () => {
+const AdminLogin = () => {
     return (
         <>
             <Navbar />
-            <div className="login">
+            <div className="admin-login">
                 <div className="card">
                     <div className="auth">
-                        <h3>Login</h3>
+                        <h3>Admin Login</h3>
                         <form action="">
                             <div className="form-group">
                                 <label htmlFor="email">Email</label>
@@ -31,35 +31,15 @@ const Login = () => {
                                 <button className="btn btn-block">
                                     Login
                                 </button>
+                                <button className="btn btn-block">
+                                    <div className="spinner">
+                                        <div className="spinner1"></div>
+                                        <div className="spinner2"></div>
+                                        <div className="spinner3"></div>
+                                    </div>
+                                </button>
                             </div>
                         </form>
-                        <div className="or">or</div>
-                        <div className="fb-google-auth">
-                            <div className="fb-google-logo">
-                                <div className="fb">
-                                    <button>
-                                        <FaFacebook />
-                                        <span>Signup with facebook</span>
-                                    </button>
-                                </div>
-                                <div className="google">
-                                    <button>
-                                        <FaGoogle />
-                                        <span>Signup with google</span>
-                                    </button>
-                                    <button className="btn btn-block">
-                                        <div className="spinner">
-                                            <div className="spinner1"></div>
-                                            <div className="spinner2"></div>
-                                            <div className="spinner3"></div>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="login-page my-2">
-                            <Link to='/register'><small>Register your account</small></Link>
-                        </div>
                     </div>
                     <div className="image-logo">
                         <img src="http://localhost:3000/design_image/login1.png" alt="" />
@@ -70,4 +50,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default AdminLogin

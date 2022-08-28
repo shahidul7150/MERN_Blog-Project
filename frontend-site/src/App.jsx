@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import AdminLogin from "./components/auth/AdminLogin";
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 import Home from "./components/home/Home";
@@ -9,6 +10,7 @@ function App() {
       <Switch>
         <Route path='/' component={Home} exact />
         <Route path='/register' component={Register} exact />
+        <Route path='/admin/login' component={AdminLogin} exact />
         <Route path='/login' component={Login} exact />
         <Route path='/article/:currentPage?' component={Home} exact></Route>
         <Route path='/article/details/:slag' component={Home} exact></Route>
