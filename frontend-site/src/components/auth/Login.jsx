@@ -1,25 +1,18 @@
 import React from 'react'
 import { BsAt } from 'react-icons/bs'
-import { FaLock, FaUser } from 'react-icons/fa'
+import { FaFacebook, FaGoogle, FaLock, FaUser } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import Navbar from '../home/Navbar'
 
-const Register = () => {
+const Login = () => {
     return (
         <>
             <Navbar />
-            <div className="register">
+            <div className="login">
                 <div className="card">
                     <div className="auth">
-                        <h3>Register</h3>
-                        <form >
-                            <div className="form-group">
-                                <label htmlFor="userName">User Name</label>
-                                <div className="icon-input">
-                                    <div className="icon"><FaUser /></div>
-                                    <input type="text" name='name' className='form-control' id='userName' placeholder='user name' autoComplete='off' />
-                                </div>
-                            </div>
+                        <h3>Login</h3>
+                        <form action="">
                             <div className="form-group">
                                 <label htmlFor="email">Email</label>
                                 <div className="icon-input">
@@ -35,26 +28,31 @@ const Register = () => {
                                 </div>
                             </div>
                             <div className="form-group">
-                                <input hidden type="file" name="image" id="reg-img" />
-                                <div className="image-file">
-                                    <div className="image"></div>
-                                    <div className="file-name">
-                                        <div className="form-control"></div>
-                                        <label htmlFor="reg-img">Browser</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="form-group">
                                 <button className="btn btn-block">
-                                    Register
+                                    Login
                                 </button>
                             </div>
-                            <div className="form-group">
-                                <div className="login-page">
-                                    <Link to='/login'><small>Login your account</small></Link>
+                        </form>
+                        <div className="or">or</div>
+                        <div className="fb-google-auth">
+                            <div className="fb-google-logo">
+                                <div className="fb">
+                                    <button>
+                                        <FaFacebook />
+                                        <span>Signup with facebook</span>
+                                    </button>
+                                </div>
+                                <div className="google">
+                                    <button>
+                                        <FaGoogle />
+                                        <span>Signup with google</span>
+                                    </button>
                                 </div>
                             </div>
-                        </form>
+                        </div>
+                        <div className="login-page my-2">
+                            <Link to='/register'><small>Register your account</small></Link>
+                        </div>
                     </div>
                     <div className="image-logo">
                         <img src="http://localhost:3000/design_image/login1.png" alt="" />
@@ -65,4 +63,4 @@ const Register = () => {
     )
 }
 
-export default Register
+export default Login
