@@ -100,4 +100,51 @@
             height: 300px;
         }
     }
+
+    .like-dislike-view{
+        margin: 15px 0px;
+        display: flex;
+        justify-content: space-between;
+        .like-dislike{
+            display: flex;
+            .icon{
+                font-size: 25px;
+                padding: 0px 3px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: transparent;
+                border: none;
+                cursor: pointer;
+            }
+            .dislike{
+                display: flex;
+                padding: 3px;
+                margin-right: 10px;
+                background: yellow;
+                border-radius: 5px;
+                align-items: center;
+                
+                .icon.red{
+                    color: red;
+                }
+            }
+            .like{
+                display: flex;
+                padding: 3px;
+                margin-right: 10px;
+                background: rgb(68, 145, 68);
+                border-radius: 5px;
+                align-items: center;
+                .icon.blue{
+                  
+                    color: rgb(19, 113, 190);
+                }
+            }
+        }
+        .view{
+            display: flex;
+            grid-gap: 8px;
+        }
+    }
 }

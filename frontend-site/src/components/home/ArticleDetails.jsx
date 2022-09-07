@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { BsChevronRight } from "react-icons/bs"
-import { AiFillTag } from "react-icons/ai"
+import { AiFillDislike, AiFillLike, AiFillTag } from "react-icons/ai"
 const ArticleDetails = () => {
     return (
         <div className="articles-details">
@@ -32,6 +32,28 @@ const ArticleDetails = () => {
 
                     While Diffusion Models almost seem to be producing results out of thin air, there are a lot of careful and interesting mathematical choices and details that provide the foundation for these results, and best practices are still evolving in the literature. Let's take a look at the mathematical theory underpinning Diffusion Models in more detail now.</p>
                 <p><img src="http://localhost:3000/articleImage/office.jpg" alt="" /></p>
+            </div>
+            <div className="like-dislike-view">
+                <div className="like-dislike">
+                    <div className="dislike">
+                        <button className='icon red'><AiFillDislike/></button>
+                        {/* <button disabled className='icon '><AiFillDislike/></button> */}
+                        <div className="like-number">(12)</div>
+                    </div>
+                    <div className="like">
+                    <button className='icon  blue'><AiFillLike/></button>
+                    {/* <button disabled className='icon  '><AiFillLike/></button> */}
+                    <div className="like-number">(12)</div>
+                    </div>
+                </div>
+                <div className="view">
+                    <span>325</span>
+                    <span>views</span>
+                </div>
+            </div>
+            <div className="read-more">
+                <span>Read more :</span>
+                <Link>While Diffusion Models almost seem to be producing</Link>
             </div>
         </div>
     )
