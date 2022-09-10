@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { BsChevronRight } from "react-icons/bs"
+import { ImLinkedin } from "react-icons/im"
+import { FaFacebookSquare, FaTwitterSquare, FaGithubSquare } from "react-icons/fa"
 import { AiFillDislike, AiFillLike, AiFillTag } from "react-icons/ai"
 const ArticleDetails = () => {
     return (
@@ -36,14 +38,14 @@ const ArticleDetails = () => {
             <div className="like-dislike-view">
                 <div className="like-dislike">
                     <div className="dislike">
-                        <button className='icon red'><AiFillDislike/></button>
+                        <button className='icon red'><AiFillDislike /></button>
                         {/* <button disabled className='icon '><AiFillDislike/></button> */}
                         <div className="like-number">(12)</div>
                     </div>
                     <div className="like">
-                    <button className='icon  blue'><AiFillLike/></button>
-                    {/* <button disabled className='icon  '><AiFillLike/></button> */}
-                    <div className="like-number">(12)</div>
+                        <button className='icon  blue'><AiFillLike /></button>
+                        {/* <button disabled className='icon  '><AiFillLike/></button> */}
+                        <div className="like-number">(12)</div>
                     </div>
                 </div>
                 <div className="view">
@@ -53,7 +55,38 @@ const ArticleDetails = () => {
             </div>
             <div className="read-more">
                 <span>Read more :</span>
-                <Link>While Diffusion Models almost seem to be producing</Link>
+                <Link to="/">While Diffusion Models almost seem to be producing</Link>
+            </div>
+            <div className="more-tag">
+                <span>Tags</span>
+                <Link>Computer</Link>
+                <Link>Programming</Link>
+                <Link>JavaScript</Link>
+            </div>
+            <div className="social-icons">
+                <a className='l-1' href=""><FaFacebookSquare /></a>
+                <a className='l-2' href=""><FaTwitterSquare /></a>
+                <a className='l-3' href=""><FaGithubSquare /></a>
+                <a className='l-4' href=""><ImLinkedin /></a>
+            </div>
+            <div className="related-article">
+                <div className="more">
+                    <h3>Related Articles</h3>
+                </div>
+                <div className="articles">
+                    <Link className='article'>
+                        <img src="http://localhost:3000/articleImage/office.jpg" alt="" />
+                        <span>While Diffusion Models almost seem to be producing</span>
+                    </Link>
+                    <Link className='article'>
+                        <img src="http://localhost:3000/articleImage/office.jpg" alt="" />
+                        <span>While Diffusion Models almost seem to be producing</span>
+                    </Link>
+                    <Link className='article'>
+                        <img src="http://localhost:3000/articleImage/office.jpg" alt="" />
+                        <span>While Diffusion Models almost seem to be producing</span>
+                    </Link>
+                </div>
             </div>
         </div>
     )
