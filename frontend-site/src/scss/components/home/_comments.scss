@@ -58,8 +58,13 @@
                 }
             }
 
-            .reply-box {
+            .reply-box.show {
                 display: flex;
+            }
+
+            .reply-box {
+                display: none;
+                // display: flex;
                 flex-direction: column;
                 grid-gap: 12px;
 
@@ -106,10 +111,49 @@
                     }
                 }
             }
+
+            .reply-comment {
+                margin-top: 15px;
+                display: flex;
+                justify-content: space-around;
+
+                .reply-comment-image-name-time {
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: space-between;
+                    grid-gap: 15px;
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                    }
+                }
+            }
         }
     }
 
     .action {
         cursor: pointer;
+    }
+}
+
+.comment-submit {
+    margin-top: 30px;
+
+    h2 {
+        color: #404040;
+    }
+
+    .form-group {
+        .form-control {
+            height: 130px;
+            padding: 10px;
+        }
+
+        .btn {
+            background-color: brown;
+            color: #fff;
+        }
     }
 }
