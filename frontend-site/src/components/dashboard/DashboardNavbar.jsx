@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FaTrash } from 'react-icons/fa'
 import { BsBell, BsListUl } from 'react-icons/bs'
 import UserMessage from './UserMessage'
 import AdminInfo from './AdminInfo'
@@ -23,6 +24,26 @@ const DashboardNavbar = () => {
                                 <div>
                                     <span><BsBell /></span>
                                     <div className="nCount">5</div>
+                                </div>
+                                <div className="notifications show">
+                                    <ul>
+                                        <li>
+                                            <Link to='#'>Someone comment your post</Link>
+                                            <div className="nDelete"><FaTrash /> </div>
+                                        </li>
+                                        <li>
+                                            <Link to='#'>Someone comment your post</Link>
+                                            <div className="nDelete"><FaTrash /> </div>
+                                        </li>
+                                        <li>
+                                            <Link to='#'>Someone comment your post</Link>
+                                            <div className="nDelete"><FaTrash /> </div>
+                                        </li>
+                                        <li>
+                                            <Link to='#'>Someone comment your post</Link>
+                                            <div className="nDelete"><FaTrash /> </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                             <UserMessage />
