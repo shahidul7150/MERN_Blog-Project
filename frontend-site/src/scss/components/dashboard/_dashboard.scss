@@ -14,6 +14,7 @@
         border: 1px solid rgba(90, 114, 208, 0.411);
         transition: all .5s;
         top: 72px;
+        transform: scale(0);
 
         .image-gmail {
             display: flex;
@@ -69,5 +70,10 @@
                 }
             }
         }
+    }
+
+    &-main-content {
+        min-height: 100vh;
+        width: 100%;
     }
 }
