@@ -2,4 +2,72 @@
     width: 100%;
     height: 100vh;
     background-color: #f0f0f0;
+
+    .adminInfo {
+        position: fixed;
+        z-index: 999;
+        width: 250px;
+        background-color: #fff;
+        right: 10px;
+        padding: 15px;
+        box-shadow: 0 0 0 0 rgba(90, 113, 208, .11), 0 4px 16px 0 rgba(167, 175, 183, .83);
+        border: 1px solid rgba(90, 114, 208, 0.411);
+        transition: all .5s;
+        top: 72px;
+
+        .image-gmail {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                border: 1px solid rgba(90, 114, 208, 0.411);
+            }
+
+            span {
+                margin-top: 5px;
+            }
+        }
+
+        ul {
+            margin-top: 15px;
+            background-color: rgb(172, 50, 243);
+            box-shadow: 0 0 0 0 rgba(90, 113, 208, .11), 0 4px 16px 0 rgba(167, 175, 183, .83);
+            border-radius: 10px;
+            padding: 0 10px;
+
+            li {
+                padding: 8px 0px;
+                transition: all .5s;
+
+                &:hover {
+                    a {
+                        text-shadow: 2px 2px #fafafa4b;
+                        color: #fff;
+                        transition: all .5s;
+                    }
+
+                    span {
+                        text-shadow: 2px 2px #fafafa4b;
+                        cursor: pointer;
+                        color: #fff;
+                        transition: all .5s;
+                    }
+                }
+
+                a {
+                    color: #fff;
+                }
+
+                span {
+                    cursor: pointer;
+                    color: #fff;
+                }
+            }
+        }
+    }
 }
