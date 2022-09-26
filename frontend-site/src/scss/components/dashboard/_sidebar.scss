@@ -9,10 +9,61 @@
     transition: all .5s;
     z-index: 999;
 
+    overflow-y: auto;
+
     ul {
         padding: 20px 0;
         display: flex;
         flex-direction: column;
+
+        #article,
+        #category,
+        #tag,
+        #user {
+            display: none;
+        }
+
+        #article:checked~li .article-category {
+            height: 70px !important;
+        }
+
+        #article:checked~li label span.right-icon1 {
+            transform: rotate(90deg);
+            transition: all .5s;
+        }
+
+
+
+        #category:checked~li .category-category {
+            height: 70px !important;
+        }
+
+        #category:checked~li label span.right-icon2 {
+            transform: rotate(90deg);
+            transition: all .5s;
+        }
+
+
+
+        #tag:checked~li .tag-category {
+            height: 70px !important;
+        }
+
+        #tag:checked~li label span.right-icon3 {
+            transform: rotate(90deg);
+            transition: all .5s;
+        }
+
+
+        #user:checked~li .user-category {
+            height: 70px !important;
+        }
+
+        #user:checked~li label span.right-icon4 {
+            transform: rotate(90deg);
+            transition: all .5s;
+        }
+
 
         li {
             min-height: 35px;
@@ -28,6 +79,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    font-size: 14px;
                 }
 
                 h3 {
@@ -41,9 +93,34 @@
                     }
                 }
             }
+
+            .article-category,
+            .category-category,
+            .tag-category,
+            .user-category {
+                padding-left: 30px;
+                display: flex;
+                flex-direction: column;
+                transition: all .5s;
+                height: 0;
+                overflow: hidden;
+
+                a {
+                    cursor: pointer;
+                    padding: 8px 0px 8px 20px;
+                    display: flex;
+                    align-items: center;
+                    grid-gap: 8px;
+
+                    span {
+                        color: #fff;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+            }
         }
     }
 
-    overflow-y: auto;
 
 }
