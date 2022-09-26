@@ -124,7 +124,38 @@
                             z-index: 1;
                             text-transform: capitalize;
                         }
+
+                        &::before {
+                            content: "";
+                            width: 100%;
+                            padding-top: 100%;
+                            // background-image: linear-gradient(to top right gray, aqua);
+                            background: linear-gradient(90deg, rgba(9, 118, 121, 0.6811099439775911) 0%, rgba(0, 251, 255, 0.91) 100%);
+                            position: absolute;
+                            left: -50%;
+                            right: 0;
+                            transition: all .8s;
+                            border-radius: 50%;
+
+
+                        }
+
+
+                        &:hover::before {
+                            transform: scale(3);
+                        }
+
+                        &:hover {
+                            color: #f0f0f0;
+                        }
                     }
+                }
+
+                .card-chart {
+                    background-color: #fff;
+                    box-shadow: 0 0 0 0 rgba(90, 113, 208, .11), 0 4px 16px 0 rgba(167, 175, 183, .83);
+                    height: 300px;
+                    padding: 20px;
                 }
             }
         }

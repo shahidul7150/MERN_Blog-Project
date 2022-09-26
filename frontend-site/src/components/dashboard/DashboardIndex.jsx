@@ -1,11 +1,46 @@
 import React from 'react'
 import { BsFillPeopleFill } from 'react-icons/bs'
 import { FaRegCaretSquareRight, FaRegUser, FaTag } from 'react-icons/fa'
-import { HiUserGroup } from 'react-icons/hi'
 import { RiArticleLine } from 'react-icons/ri'
 import { Link } from 'react-router-dom'
-
+import Chart from "react-apexcharts"
 const DashboardIndex = () => {
+    const chartOptions = {
+        series: [
+            {
+                name: "Visitor",
+                data: [510, 231, 410, 321, 110, 75, 471, 254, 321, 150, 452, 625]
+            }
+        ],
+        options: {
+            color: ['#181ee8', '#181ee8'],
+            chart: {
+                background: 'transparent'
+            },
+            datalabels: {
+                enabled: false
+
+            },
+            stroke: {
+                curve: 'smooth'
+            },
+            xaxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            },
+            legend: {
+                position: 'top'
+            },
+            grid: {
+                show: 'false',
+
+            },
+            fill: {
+                colors: ['#00f9ffe8']
+            }
+
+        },
+
+    }
     return (
         <div className="dashboard-main-content-elements">
             <div className="dashboard-elements">
@@ -57,6 +92,16 @@ const DashboardIndex = () => {
                     </Link>
 
 
+                </div>
+
+                <div className="card-chart">
+                    <Chart
+                        options={chartOptions.options}
+                        series={chartOptions.series}
+                        type='bar'
+                        height='100%'
+                        width='100%'
+                    />
                 </div>
             </div>
         </div>
