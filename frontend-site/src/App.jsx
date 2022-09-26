@@ -18,7 +18,8 @@ function App() {
         <Route path='/article/category/:categorySlug/:currentPage?' component={Home} exact></Route>
         <Route path='/article/tag/:tagSlug/:currentPage?' component={Home} exact></Route>
         <Route path='/article/search/:searchValue' component={Home} exact></Route>
-        <Route path='/dashboard' component={Dashboard}></Route>
+        <Route path='/dashboard' component={Dashboard} exact></Route>
+        <Route path='/dashboard/all-article' component={Dashboard} exact></Route>
       </Switch>
     </Router>
   )

@@ -32,7 +32,7 @@ const Sidebar = () => {
                         <span className='right-icon1'><BsChevronRight /></span>
                     </label>
                     <div className="article-category">
-                        <Link>
+                        <Link to='/dashboard/all-article'>
                             <span><FaEye /></span>
                             <span>All Article</span>
                         </Link>
@@ -70,7 +70,7 @@ const Sidebar = () => {
                         <span className='right-icon3'><BsChevronRight /></span>
                     </label>
                     <div className="tag-category">
-                        <Link>
+                        <Link >
                             <span><FaEye /></span>
                             <span>All Article</span>
                         </Link>
