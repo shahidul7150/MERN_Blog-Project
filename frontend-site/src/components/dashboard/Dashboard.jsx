@@ -16,7 +16,7 @@ const Dashboard = () => {
                 <Sidebar />
                 <Switch>
                     <Route path='/dashboard' component={DashboardIndex} exact />
-                    <Route path='/dashboard/all-article' component={DashboardArticle} exact />
+                    <Route path='/dashboard/all-article/:currentPage?' component={DashboardArticle} exact />
                 </Switch>
             </div>
         </div>
