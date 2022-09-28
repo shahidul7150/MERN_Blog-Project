@@ -5,6 +5,7 @@ import DashboardIndex from './DashboardIndex'
 import DashboardNavbar from './DashboardNavbar'
 import Helmet from 'react-helmet'
 import Sidebar from './Sidebar'
+import ArticleAdd from './ArticleAdd'
 const Dashboard = () => {
     return (
         <div className='dashboard'>
@@ -17,6 +18,7 @@ const Dashboard = () => {
                 <Switch>
                     <Route path='/dashboard' component={DashboardIndex} exact />
                     <Route path='/dashboard/all-article/:currentPage?' component={DashboardArticle} exact />
+                    <Route path='/dashboard/article-add' component={ArticleAdd} exact />
                 </Switch>
             </div>
         </div>

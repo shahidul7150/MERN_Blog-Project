@@ -36,7 +36,7 @@ const Sidebar = () => {
                             <span><FaEye /></span>
                             <span>All Article</span>
                         </Link>
-                        <Link>
+                        <Link to='/dashboard/article-add'>
                             <span><FaPlusCircle /></span>
                             <span>Add Article</span>
                         </Link>

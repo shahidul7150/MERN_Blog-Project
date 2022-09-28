@@ -24,7 +24,7 @@ const DashboardArticle = () => {
                         <span><FaSearch /></span>
                     </div>
                     <div className="newAdd">
-                        <Link className='btn' to='/dashboard/add-article'>Add new</Link>
+                        <Link className='btn' to='/dashboard/article-add'>Add new</Link>
                     </div>
                 </div>
                 <div className="height-70vh">

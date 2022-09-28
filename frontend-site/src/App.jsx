@@ -20,6 +20,7 @@ function App() {
         <Route path='/article/search/:searchValue' component={Home} exact></Route>
         <Route path='/dashboard' component={Dashboard} exact></Route>
         <Route path='/dashboard/all-article/:currentPage?' component={Dashboard} exact></Route>
+        <Route path='/dashboard/article-add' component={Dashboard} exact></Route>
       </Switch>
     </Router>
   )
