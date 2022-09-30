@@ -21,6 +21,7 @@ function App() {
         <Route path='/dashboard' component={Dashboard} exact></Route>
         <Route path='/dashboard/all-article/:currentPage?' component={Dashboard} exact></Route>
         <Route path='/dashboard/article-add' component={Dashboard} exact></Route>
+        <Route path='/dashboard/article/edit/:articleSlug' component={Dashboard} exact></Route>
       </Switch>
     </Router>
   )

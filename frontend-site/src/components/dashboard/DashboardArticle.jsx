@@ -38,7 +38,7 @@ const DashboardArticle = () => {
                             <p>{text}</p>
                             <div className="action">
                                 <span>
-                                    <Link ><MdEdit /></Link>
+                                    <Link to="/dashboard/article/edit/dgdgf"><MdEdit /></Link>
                                 </span>
                                 <span>
                                     <Link><FaRegEye /></Link>
