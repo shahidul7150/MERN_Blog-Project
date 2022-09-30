@@ -53,7 +53,7 @@ const ArticleEdit = () => {
                             <option value="">Tech world</option>
                             <option value="">Computer</option>
                             <option value="">Algorithom</option>
-                            <option value="">Ai</option>
+                            <option value="">Artificial</option>
                         </select>
                         <p className="error">Please provide article title</p>
                     </div>
