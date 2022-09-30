@@ -14,7 +14,7 @@ const ArticleEdit = () => {
     return (
         <div className="add-article">
             <Helmet>
-                <title>Article Edit</title>
+                <title>Article Edit </title>
             </Helmet>
             <div className="add">
                 <div className=" title-show-article">
