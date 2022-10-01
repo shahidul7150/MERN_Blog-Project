@@ -51,13 +51,13 @@ const Sidebar = () => {
                         <span className='right-icon2'><BsChevronRight /></span>
                     </label>
                     <div className="category-category">
-                        <Link>
+                        <Link to='/dashboard/all-category'>
                             <span><FaEye /></span>
-                            <span>All Article</span>
+                            <span>All Category</span>
                         </Link>
-                        <Link>
+                        <Link to='/dashboard/add-category'>
                             <span><FaPlusCircle /></span>
-                            <span>Add Article</span>
+                            <span>Add Category</span>
                         </Link>
                     </div>
                 </li>

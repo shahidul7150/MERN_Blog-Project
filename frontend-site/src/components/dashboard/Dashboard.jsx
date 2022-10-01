@@ -7,6 +7,7 @@ import Helmet from 'react-helmet'
 import Sidebar from './Sidebar'
 import ArticleAdd from './ArticleAdd'
 import ArticleEdit from './ArticleEdit'
+import AllCategory from './AllCategory'
 const Dashboard = () => {
     return (
         <div className='dashboard'>
@@ -21,6 +22,7 @@ const Dashboard = () => {
                     <Route path='/dashboard/all-article/:currentPage?' component={DashboardArticle} exact />
                     <Route path='/dashboard/article-add' component={ArticleAdd} exact />
                     <Route path='/dashboard/article/edit/:articleSlug' component={ArticleEdit} exact />
+                    <Route path='/dashboard/all-category/:currentPage?' component={AllCategory} exact />
                 </Switch>
             </div>
         </div>

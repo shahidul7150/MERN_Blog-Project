@@ -1,7 +1,4 @@
 .dashboard-article {
-    margin-left: 275px;
-    padding: 85px 12px 12px 12px;
-    transition: all .5s;
 
     .article-action-pagination {
         min-height: calc(100vh - 100px);
@@ -10,47 +7,7 @@
         justify-content: space-between;
         flex-direction: column;
 
-        .numOf-search-newAdd {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 10px;
-            margin-bottom: 20px;
-            background-color: #b4ccd8;
-            padding: 10px;
 
-            .searchOf {
-                position: relative;
-                width: 50%;
-
-                .search {
-                    background-color: gray;
-                }
-
-                span {
-                    position: absolute;
-                    padding: 9px;
-                    right: 0;
-                    display: flex;
-                    top: 0;
-                    color: #404040;
-                }
-            }
-
-            .newAdd {
-                .btn {
-                    background-color: #58b15c;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    color: #fff;
-
-                    &:hover {
-                        background-color: #49aa4d;
-                    }
-                }
-            }
-        }
 
         .height-70vh {
             min-height: 70vh;
