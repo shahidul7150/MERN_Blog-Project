@@ -23,6 +23,7 @@ function App() {
         <Route path='/dashboard/article-add' component={Dashboard} exact></Route>
         <Route path='/dashboard/article/edit/:articleSlug' component={Dashboard} exact></Route>
         <Route path='/dashboard/all-category/:currentPage?' component={Dashboard} exact></Route>
+        <Route path='/dashboard/add-category' component={Dashboard} exact></Route>
       </Switch>
     </Router>
   )

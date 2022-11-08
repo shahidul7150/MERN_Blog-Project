@@ -8,6 +8,7 @@ import Sidebar from './Sidebar'
 import ArticleAdd from './ArticleAdd'
 import ArticleEdit from './ArticleEdit'
 import AllCategory from './AllCategory'
+import AddCategories from './AddCategories'
 const Dashboard = () => {
     return (
         <div className='dashboard'>
@@ -23,6 +24,7 @@ const Dashboard = () => {
                     <Route path='/dashboard/article-add' component={ArticleAdd} exact />
                     <Route path='/dashboard/article/edit/:articleSlug' component={ArticleEdit} exact />
                     <Route path='/dashboard/all-category/:currentPage?' component={AllCategory} exact />
+                    <Route path='/dashboard/add-category' component={AddCategories} exact />
                 </Switch>
             </div>
         </div>

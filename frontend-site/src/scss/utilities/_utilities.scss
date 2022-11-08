@@ -158,8 +158,20 @@
 }
 
 .dashboard-article,
-.all-category {
+.all-category,
+.add-category {
     margin-left: 275px;
     padding: 85px 12px 12px 12px;
     transition: all .5s;
+}
+
+.title-show-article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a.btn {
+        background-color: #58b15c;
+        color: #fff;
+    }
 }
